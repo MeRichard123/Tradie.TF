@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   };
   return (
     <main className="flex min-h-screen">
-      <nav id="nav" className="z-10 h-screen bg-bodyLight p-9 text-body text-center flex items-center flex-col justify-between">
+      <nav id="nav" className="z-10 absolute h-screen bg-bodyLight p-9 text-body text-center flex items-center flex-col justify-between">
         <div className="w-full">
           <button className="absolute top-5 right-5" type="button" onClick={() => hideNav()}>
             <IoMdClose size="1.5rem" />
@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <button type="button" onClick={() => showNav()} className="absolute top-10 left-10">
         <IoIosMenu size="2rem" />
       </button>
-      <section className="p-7">
+      <section className="py-7 px-11 pt-24 sm:pt-7 sm:px-32">
         <Component {...pageProps} />
       </section>
     </main>
