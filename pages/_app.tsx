@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   };
   return (
     <main className="flex min-h-screen">
-      <nav id="nav" className="z-10 absolute h-screen bg-bodyLight p-9 text-body text-center flex items-center flex-col justify-between">
+      <nav id="nav" className="z-10 closed absolute h-screen bg-bodyLight p-9 text-body text-center flex items-center flex-col justify-between">
         <div className="w-full">
           <button className="absolute top-5 right-5" type="button" onClick={() => hideNav()}>
             <IoMdClose size="1.5rem" />
